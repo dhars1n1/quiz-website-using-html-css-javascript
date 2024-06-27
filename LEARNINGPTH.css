@@ -1,0 +1,129 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0F1035, #365486, #7FC7D9, #DCF2F1);
+    background-size: 400% 400%;
+    animation: GradientBackground 15s ease infinite;
+}
+
+/* Gradient Background Animation */
+@keyframes GradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header Styling */
+.header {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 128, 128, 0.8);
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: GlowingEffect 1.5s infinite alternate;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Glowing Effect Animation */
+@keyframes GlowingEffect {
+    0% { box-shadow: 0 0 10px #FF8080; }
+    100% { box-shadow: 0 0 20px #FF4D4D; }
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+/* Section Headings */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Tiles Container */
+.tiles {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Tile Styling */
+.tile {
+    background-color: #FF8080;
+    color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tile:hover {
+    background-color: #FF4D4D;
+    transform: scale(1.05);
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    background-color: #FF8080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FF4D4D;
+}
+
+/* Error Message Styling */
+.error-message {
+    margin-top: 10px;
+    color: red;
+    text-align: center;
+}
+
+.tile.selected {
+    border: 2px solid #3185FC; /* Change the border color as needed */
+    box-shadow: 0 0 10px rgba(49, 133, 252, 0.5);
+}

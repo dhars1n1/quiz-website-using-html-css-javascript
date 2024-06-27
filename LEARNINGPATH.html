@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI MasterMind</title>
+    <link rel="stylesheet" href="LEARNINGPTH.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap">
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to UI MasterMind</h1>
+    </div>
+    <div class="container">
+        <!-- Learning Path Selection Section -->
+        <section id="learning-path-section">
+            <h2>Select Your Learning Path</h2>
+            <div class="tiles">
+                <div class="tile" data-path="html">HTML</div>
+                <div class="tile" data-path="css">CSS</div>
+                <div class="tile" data-path="javascript">JavaScript</div>
+            </div>
+            <div id="learning-path-error" class="error-message"></div>
+            <button id="next-button" style="display: none;">Next</button>
+        </section>
+
+        <!-- Learning Mode Selection Section -->
+        <section id="learning-mode-section" style="display: none;">
+            <h2>Select Learning Mode</h2>
+            <div class="tiles">
+                <div class="tile" data-mode="flashcards">Flashcards</div>
+                <div class="tile" data-mode="quiz">Direct Quiz</div>
+            </div>
+            <div id="learning-mode-error" class="error-message"></div>
+            <button id="start-button" style="display: none;">Start</button>
+        </section>
+    </div>
+    <script src="LEARNINGPATH.JS"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI MasterMind - Welcome</title>
+    <link rel="stylesheet" href="WELCOMEPAGE.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to UI MasterMind</h1>
+    </div>
+    <div class="navbar">
+        <a href="#" id="login-link">Login</a>
+        <a href="#" id="signup-link">Sign Up</a>
+    </div>
+    <div class="welcome-container">
+        <!-- Login Form -->
+        <form id="login-form" class="form" style="display: none;">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+                <div id="login-password-strength"></div>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <!-- Sign Up Form -->
+        <form id="signup-form" class="form" style="display: none;">
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="password" required>
+                <div id="signup-password-strength"></div>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    <script src="WELCOMEPAGE.js"></script>
+</body>
+</html>

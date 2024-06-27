@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="header">
+        <h1>HTML Quiz</h1>
+        <button id="start-quiz" onclick="startQuiz()">Start Quiz</button>
+        <div id="timer">Time left: 02:00</div>
+    </div>
+    
+    <div class="quiz-container">
+        <div class="shelf" id="shelf">
+            <!-- Ten boxes for the questions -->
+            <div class="box" id="box-0" onclick="openQuestion(0)">1</div>
+            <div class="box" id="box-1" onclick="openQuestion(1)">2</div>
+            <div class="box" id="box-2" onclick="openQuestion(2)">3</div>
+            <div class="box" id="box-3" onclick="openQuestion(3)">4</div>
+            <div class="box" id="box-4" onclick="openQuestion(4)">5</div>
+            <div class="box" id="box-5" onclick="openQuestion(5)">6</div>
+            <div class="box" id="box-6" onclick="openQuestion(6)">7</div>
+            <div class="box" id="box-7" onclick="openQuestion(7)">8</div>
+            <div class="box" id="box-8" onclick="openQuestion(8)">9</div>
+            <div class="box" id="box-9" onclick="openQuestion(9)">10</div>
+        </div>
+        
+        <div id="gold-jar">
+            <div id="gold-coins">Gold Coins: 0 <span class="coin"></span></div>
+            <img src="goldjar.png" alt="Gold Jar">
+        </div>
+    </div>
+
+    <div id="question-modal" class="modal">
+        <div id="scroll">
+            <img src="scroll.png" alt="Scroll">
+            <div id="question-content">
+                <p id="question-text"></p>
+                <button id="hint" onclick="useHint()">Use Hint</button>
+                <p id="hint-text" style="display:none;"></p> <!-- Display hint text -->
+                <div id="options">
+                    <!-- Options will be dynamically inserted here -->
+                </div>
+                <button onclick="closeQuestion()">Close</button>
+            </div>
+        </div>
+        <span class="close" onclick="closeQuestion()">&times;</span>
+    </div>
+
+    <div id="summary-modal" class="modal">
+        <div id="summary-content">
+            <h2>Quiz Summary</h2>
+            <div id="summary-list"></div>
+            <button onclick="closeSummary()">Close</button>
+        </div>
+    </div>
+
+    <script src="htmlquiz.js"></script>
+</body>
+</html>
+
