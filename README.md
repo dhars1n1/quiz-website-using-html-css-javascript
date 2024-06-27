@@ -9,7 +9,6 @@ This repository contains a simple quiz website built using HTML, CSS, and JavaSc
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Future Enhancements](#future-enhancements)
 - [Contributing](#contributing)
 - [Contact](#contact)
 - [License](#license)
